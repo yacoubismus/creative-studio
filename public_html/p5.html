@@ -2,9 +2,25 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>p5.js Magic</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>I am still here</h1>
+<script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.js"></script>
+<script type="text/javascript">
+function setup() {
+	  createCanvas(2000, 2000);
+	}
+
+	function draw() {
+	  if (mouseIsPressed) {
+	    fill(0);
+	  } else {
+	    fill(255);
+	  }
+	  ellipse(mouseX, mouseY, 80, 80);
+	}
+
+</script>
 </body>
 </html>
